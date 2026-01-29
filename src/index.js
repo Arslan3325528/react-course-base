@@ -270,9 +270,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(<App />); 
 root.render(
   <React.StrictMode>
-    //? Paintings
+    {/* //? Paintings */}
     <App />
-    //? Planes
+    {/* //? Planes */}
     {/* <AppPlanes /> */}
   </React.StrictMode>
 );
