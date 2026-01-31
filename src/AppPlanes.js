@@ -5,16 +5,22 @@ import planes from './json/planes.json';
 // console.log("Planes:", Planes);
 // console.log("planes:", planes);
 
-//!💚 Для відображення локальних зображень з http://localhost:3001/react-course та https://arslan3325528.github.io/react-course/
-import img1 from './images/planes-actual/a-10.jpg';
-import img2 from './images/planes-actual/b-2-comp.jpg';
-import img3 from './images/planes-actual/f-22-comp.jpg';
+//!💚 Для відображення локальних зображень з http://localhost:3002/react-course-base/ та https://arslan3325528.github.io/react-course-base/
+import img0 from './images/planes-actual/a-10.jpg';
+import img1 from './images/planes-actual/b-2-comp.jpg';
+import img2 from './images/planes-actual/f-22-comp.jpg';
 
-// const imagesArr = [img1, img2, img3];
+//todo: var-1
+// planes[0].url.actual = img0;
+// planes[1].url.actual = img1;
+// planes[2].url.actual = img2;
 
-planes[0].url.actual = img1;
-planes[1].url.actual = img2;
-planes[2].url.actual = img3;
+//todo: var-2
+const images = [img0, img1, img2];
+for (let i = 0; i < planes.length; i++) {
+  planes[i].url.actual = images[i];
+};
+//!💚 ____________________________________________________________________________________________________________________________________
 
 //? Paintings
 //todo: var.1
@@ -22,9 +28,9 @@ planes[2].url.actual = img3;
 //   return (
 //     <div>
 //       <Painting
-//         // url={paintings[0].url}
+//         url={paintings[0].url}
 //         title={paintings[0].title}
-//         // author={paintings[0].author.tag}
+//         author={paintings[0].author.tag}
 //         profileUrl={paintings[0].author.url}
 //         price={paintings[0].price}
 //         quantity={paintings[0].quantity}
