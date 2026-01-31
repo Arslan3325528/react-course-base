@@ -20,12 +20,12 @@
 
 import React from 'react'; //! 1 - React-елементи
 import ReactDOM from 'react-dom/client'; //! 2 - Render React-елемента
-// import paintings from './paintings.json' //! 6.1 - Компонент `Painting`
-// import planes from './planes.json'
+// import paintings from './json/paintings.json' //! 6.1 - Компонент `Painting`
+// import planes from './json/planes.json'
 //? Paintings
 import App from './App'; //! 6.5.1 Створюємо Головний компонент всього застосунку - App.js
 //? Planes
-// import AppPlanes from './AppPlanes';
+import AppPlanes from './AppPlanes';
 
 //! 1 - React-елементи
 // const element = React.createElement("div");
@@ -271,9 +271,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* //? Paintings */}
-    <App />
+    {/* <App /> */}
     {/* //? Planes */}
-    {/* <AppPlanes /> */}
+    <AppPlanes />
   </React.StrictMode>
 );
 

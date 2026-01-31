@@ -1,9 +1,20 @@
 
-//? Planes
+// ? Planes
 import Planes from "./components/Planes";
 import planes from './json/planes.json';
 // console.log("Planes:", Planes);
 // console.log("planes:", planes);
+
+//!💚 Для відображення локальних зображень з http://localhost:3001/react-course та https://arslan3325528.github.io/react-course/
+import img1 from './images/planes-actual/a-10.jpg';
+import img2 from './images/planes-actual/b-2-comp.jpg';
+import img3 from './images/planes-actual/f-22-comp.jpg';
+
+// const imagesArr = [img1, img2, img3];
+
+planes[0].url.actual = img1;
+planes[1].url.actual = img2;
+planes[2].url.actual = img3;
 
 //? Paintings
 //todo: var.1
