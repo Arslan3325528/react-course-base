@@ -46,7 +46,7 @@ Planes.propTypes = {
   year: PropTypes.number.isRequired,
   country: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  // price: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,  //! контроль propTypes
+  price: PropTypes.string.isRequired,
+  // price: PropTypes.number.isRequired,  //! контроль propTypes
   description: PropTypes.string.isRequired
 };
